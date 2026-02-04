@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RESPUESTA AL REVISOR - PUNTO 3: ADICIONES OPCIONALES
+% (Ejemplos comparativos, implementación numérica, tablas comparativas)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Response to Reviewer Comments: Point 3 --- Optional Additions}
+
+\subsection*{Reviewer's Suggestions}
+
+\begin{quote}
+\textit{``The manuscript would benefit from including at least one comparative worked example showing GAPoT calculations alongside traditional methods. A numerical implementation section would help practitioners apply these concepts. Additionally, a comprehensive comparison table of GA versus existing methods (IEEE 1459, p-q theory, CPC) would clarify the practical distinctions.''}
+\end{quote}
+
+\subsection*{Authors' Response}
+
+We sincerely appreciate these constructive suggestions for enhancing the practical utility of the review. After careful consideration, we have decided to address these points through the creation of a comprehensive \textbf{open-source code repository} rather than extending the manuscript length with detailed numerical implementations. This approach offers several advantages:
+
+\subsubsection*{1. Comprehensive Worked Examples (Jupyter Notebooks)}
+
+The repository includes interactive Jupyter notebooks that provide:
+
+\begin{itemize}
+    \item \textbf{GAPoT vs.\ IEEE 1459 comparison}: Step-by-step calculations for single-phase circuits with harmonic distortion, showing identical test signals processed by both methods with direct numerical comparison of results.
+    
+    \item \textbf{GAPoT vs.\ p-q theory comparison}: Three-phase system analysis demonstrating how geometric power decomposition relates to instantaneous power components.
+    
+    \item \textbf{Harmonic and interharmonic analysis}: Detailed examples showing the cross-frequency distortion terms $\mathbf{M}_D$ that GAPoT uniquely identifies, compared to the aggregated distortion power $D$ in IEEE 1459.
+    
+    \item \textbf{Current decomposition}: Worked examples of geometric projection/rejection for compensation current calculation.
+\end{itemize}
+
+These notebooks allow readers to execute the calculations themselves, modify parameters, and observe how results change---an interactive experience impossible to replicate in a static manuscript.
+
+\subsubsection*{2. Complete Numerical Implementation}
+
+The repository provides production-ready Python code including:
+
+\begin{itemize}
+    \item \textbf{Fourier-to-GA transformation}: Complete implementation of Algorithm~1 from the manuscript, with the indexing strategy for arbitrary frequency sets.
+    
+    \item \textbf{Geometric power calculation}: The \texttt{GeometricPower} class computes $P$, $\|\mathbf{M}_Q\|$, $\|\mathbf{M}_D\|$, and verifies energy conservation.
+    
+    \item \textbf{Rotor-based transformations}: Clarke, Park, and Fortescue transforms implemented using GA rotors, demonstrating the geometric advantages discussed in Section~4.
+    
+    \item \textbf{Noise mitigation}: Holoborodko differentiators, Tikhonov, and TV regularization methods for robust derivative computation.
+    
+    \item \textbf{Traditional methods for comparison}: IEEE 1459 and p-q theory implementations enabling direct side-by-side comparison.
+\end{itemize}
+
+\subsubsection*{3. Comparison Tables and Benchmarks}
+
+Rather than static tables, the repository provides:
+
+\begin{itemize}
+    \item \textbf{Dynamic comparison functions}: Code that generates comparison tables for any user-specified signals, allowing readers to explore cases relevant to their applications.
+    
+    \item \textbf{Computational benchmarks}: Scripts measuring execution time across varying numbers of harmonics, reproducing and extending the complexity analysis in Section~5.
+    
+    \item \textbf{Example output}: Pre-computed results demonstrating typical comparisons.
+\end{itemize}
+
+\subsubsection*{Advantages of This Approach}
+
+\begin{enumerate}
+    \item \textbf{Reproducibility}: All numerical results can be independently verified and reproduced.
+    
+    \item \textbf{Extensibility}: The research community can contribute improvements, additional examples, and bug fixes.
+    
+    \item \textbf{Maintainability}: Code can be updated to fix issues or add features without requiring manuscript revision.
+    
+    \item \textbf{Manuscript focus}: The paper remains focused on theoretical contributions without excessive implementation details.
+    
+    \item \textbf{Open science alignment}: Increasingly required or encouraged by journals and funding agencies.
+    
+    \item \textbf{Citability}: A Zenodo DOI provides permanent archival and proper attribution.
+\end{enumerate}
+
+\subsubsection*{Manuscript Modifications}
+
+We have added a new subsection ``Supplementary Material and Code Repository'' (Section~7.X) that:
+
+\begin{itemize}
+    \item Describes the repository contents
+    \item Provides the GitHub URL
+    \item References the Zenodo DOI for citation
+    \item Explains the MIT license terms
+\end{itemize}
+
+\subsubsection*{Repository Location}
+
+\begin{center}
+\textbf{GitHub}: \url{https://github.com/fmarrabal/ga-power-systems}
+
+\textbf{Zenodo DOI}: \texttt{10.5281/zenodo.XXXXXXX} (to be assigned upon acceptance)
+\end{center}
+
+\subsubsection*{Summary}
+
+We believe this approach provides substantially more value to readers than static worked examples in the manuscript, while keeping the paper focused on its primary contribution as a comprehensive theoretical review. The repository transforms the optional suggestions into a robust, community-accessible resource that will continue to evolve and improve.
+
+We thank the reviewer for motivating this enhancement to the paper's practical utility.
+
+\vspace{1em}
+\noindent\rule{\textwidth}{0.4pt}
+
+\subsection*{Changes Made to Manuscript}
+
+\begin{enumerate}
+    \item Added new subsection ``Supplementary Material and Code Repository'' (Section~7.X)
+    \item Added BibTeX entry for Zenodo repository citation
+    \item Minor cross-references to repository in relevant methodology sections
+\end{enumerate}

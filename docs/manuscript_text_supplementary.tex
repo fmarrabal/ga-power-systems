@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TEXTO PARA INSERTAR EN EL MANUSCRITO
+% Sección: Supplementary Material and Code Repository
+% Ubicación sugerida: Al final de Future Directions o como nueva sección
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Supplementary Material and Code Repository}
+\label{sec:supplementary}
+
+To facilitate reproducibility, practical application, and further development of the methods presented in this review, we provide an open-source code repository containing complete implementations of the Geometric Algebra Power Theory (GAPoT) framework. The repository includes:
+
+\begin{itemize}
+    \item \textbf{Core GAPoT implementation}: Python modules implementing the Fourier-to-GA transformation (Algorithm~\ref{alg:fourier_to_ga}), geometric power calculation, and current decomposition methods described in Sections~\ref{sec:basis_mapping}--\ref{sec:compensation}.
+    
+    \item \textbf{Comparative examples}: Jupyter notebooks providing step-by-step worked examples that demonstrate GAPoT alongside IEEE~1459 and instantaneous power theory calculations for identical test circuits, enabling direct comparison of results and methodologies.
+    
+    \item \textbf{Rotor-based transformations}: Implementation of Clarke, Park, and Fortescue transformations using the GA rotor formalism, illustrating the geometric advantages discussed in Section~\ref{sec:transformations}.
+    
+    \item \textbf{Noise mitigation tools}: Implementation of Holoborodko differentiators, Tikhonov regularization, and Total Variation methods for robust derivative computation, addressing the sensitivity analysis presented in Section~\ref{sec:noise}.
+    
+    \item \textbf{Computational benchmarks}: Scripts reproducing the complexity analysis of Section~\ref{sec:complexity}, with execution time measurements across varying numbers of harmonic components.
+    
+    \item \textbf{Test data}: Synthetic and experimental datasets used in the validation studies, formatted for direct use with the provided analysis tools.
+\end{itemize}
+
+The repository is publicly available at:
+\begin{center}
+    \url{https://github.com/fmarrabal/ga-power-systems}
+\end{center}
+
+\noindent A persistent digital object identifier (DOI) for archival citation is available through Zenodo~\cite{gapot_zenodo}. The code is released under the MIT license, permitting unrestricted use, modification, and distribution for both academic and commercial applications.
+
+This supplementary material serves multiple purposes: it ensures complete reproducibility of the numerical results presented herein, provides a practical starting point for researchers and engineers wishing to apply GA methods, and establishes a foundation for community-driven extensions and improvements. We encourage contributions via the repository's issue tracker and pull request mechanism.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENTRADA BIBTEX PARA EL REPOSITORIO (añadir a references.bib)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% @software{gapot_zenodo,
+%   author    = {Montoya, Francisco G. and Alcayde, Alfredo and 
+%                Arrabal-Campos, Francisco M.},
+%   title     = {{GA-Power-Systems}: {G}eometric {A}lgebra {P}ower 
+%                {T}heory {F}ramework},
+%   year      = {2026},
+%   publisher = {Zenodo},
+%   doi       = {10.5281/zenodo.XXXXXXX},
+%   url       = {https://github.com/fmarrabal/ga-power-systems},
+%   note      = {Version 1.0.0}
+% }

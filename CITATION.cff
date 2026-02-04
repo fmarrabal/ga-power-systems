@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "GA-Power-Systems: Geometric Algebra Power Theory Framework"
+version: 1.0.0
+date-released: 2026-02-01
+doi: 10.5281/zenodo.XXXXXXX
+url: "https://github.com/fmarrabal/ga-power-systems"
+repository-code: "https://github.com/fmarrabal/ga-power-systems"
+license: MIT
+keywords:
+  - geometric algebra
+  - clifford algebra
+  - power systems
+  - power theory
+  - harmonic analysis
+  - electrical engineering
+authors:
+  - family-names: Montoya
+    given-names: Francisco G.
+    email: pagilm@ual.es
+    affiliation: "University of Almería"
+    orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+  - family-names: Alcayde
+    given-names: Alfredo
+    affiliation: "University of Almería"
+  - family-names: Arrabal-Campos
+    given-names: Francisco M.
+    affiliation: "University of Almería"
+    orcid: "https://orcid.org/0000-0001-9990-0569"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Montoya
+      given-names: Francisco G.
+    - family-names: Alcayde
+      given-names: Alfredo
+    - family-names: Arrabal-Campos
+      given-names: Francisco M.
+  title: "Geometric Algebra in Electrical Power Engineering: Foundations, Methods, and Applications"
+  journal: "Philosophical Transactions of the Royal Society A"
+  year: 2026
+  volume: XXX
+  start: XXX
+  end: XXX
+  doi: 10.1098/rsta.2025.XXXX
