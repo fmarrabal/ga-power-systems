@@ -244,18 +244,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Francisco G. Montoya** - *University of Almería* - [ORCID](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-- **Alfredo Alcayde** - *University of Almería*
+- **Francisco G. Montoya** - *University of Almería* - [ORCID](https://orcid.org/0000-0003-4105-565X)
+- **Alfredo Alcayde** - *University of Almería* - [ORCID](https://orcid.org/0000-0002-2776-089X)
 - **Francisco M. Arrabal-Campos** - *University of Almería* - [ORCID](https://orcid.org/0000-0001-9990-0569)
 
 ## 🙏 Acknowledgments
 
-- Research Group FQM-376, University of Almería
+- Research Group FQM-376 and TIC221, University of Almería
 - The `clifford` Python library developers
 - All contributors to the Geometric Algebra research community
 
 ## 📬 Contact
 
 For questions or collaboration inquiries:
-- Email: pagilm@ual.es
+- Email: fmarrabal@ual.es
 - Issues: [GitHub Issues](https://github.com/fmarrabal/ga-power-systems/issues)
